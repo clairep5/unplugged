@@ -126,10 +126,18 @@ h4 {
 }
  
 p {
-  font-size: 0.875em;
+  font-size: .875em;
 	line-height: 1.285;
 }
+
+img {
+  width: 100%;
+}
  
+figure {
+  margin: 0;
+}
+
 address {
   font-style: normal;
 }
@@ -154,6 +162,10 @@ header .content-wrapper {
   align-items: center;
   flex-flow: row wrap;
   margin: 0;
+}
+
+header figure {
+  width: 60%;
 }
 
 .header-divider{
@@ -223,6 +235,9 @@ footer .copyright {
 .hero-area {
   display: flex;
   justify-content: center;
+  background: url(../img/unplugged-retreat.jpg) center;
+  background-size: cover;
+  min-height: 500px;
 }
 
 .hero-area h1 {
@@ -271,6 +286,8 @@ input[type=button] {
 .features {
   display: flex;
   justify-content: center;
+  background: url(../img/unplugged-retreat-features.jpg) center;
+  background-size: cover;
 }
 
 .features h2 {
@@ -451,7 +468,7 @@ input[type=button] {
    ========================================================================== */
 
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width:768px) {
   /* Tablet styles here*/
 
   /* General Styles */
@@ -498,6 +515,10 @@ header nav ul {
 }
 
 /* Hero Area */
+
+.hero-area {
+  min-height: 600px;
+}
 
 .hero-area h1 {
   font-size: 3em;
@@ -548,6 +569,7 @@ aside .content-wrapper .form {
   width: 85%;
 }
 
+.reviews article figure,
 .reviews article div {
   width: 49%;
 }
@@ -589,7 +611,7 @@ footer .copyright {
 /*********** ABOUT PAGE ***************/
 
 .mission-content {
-  display:flex;
+  display: flex;
   justify-content: space-between;
   align-items: flex-start;
   padding-top: 20px;
@@ -629,7 +651,7 @@ footer .copyright {
 
 .faq h4, 
 .faq p {
-  font-size: 0.875em;
+  font-size: .875em;
   line-height: 1.125;
 }
 
@@ -637,7 +659,7 @@ footer .copyright {
 
 /* END TABLET STYLES */
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width:1200px) {
   /* Desktop styles here*/
 
   /* General Styles */
@@ -733,6 +755,7 @@ footer h4 {
   line-height: 1;
 }
 
+}
 /* ==========================================================================
    Print styles.
    Inlined to avoid the additional HTTP request:
