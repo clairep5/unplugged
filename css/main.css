@@ -97,6 +97,7 @@ body {
   font-size: 1em;
   color: #e2e3ed;
   text-align: left;
+  background-color: #202322;
 }
  
 ul, 
@@ -115,6 +116,7 @@ h2 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.875em;
   font-weight: 500;
+  margin: 0;
 }
  
 h3, 
@@ -168,7 +170,7 @@ header figure {
   width: 60%;
 }
 
-.header-divider{
+.header-divider {
   background: #3a3a3a;
   width: 100%;
   height: 1px;
@@ -310,7 +312,6 @@ input[type=button] {
 .features .features-items {
   display: flex;
   justify-content: center;
-  align-items: flex-start;
   flex-flow: row wrap;
 }
 
@@ -349,6 +350,22 @@ input[type=button] {
   background-color: #527158;
   display: flex;
   justify-content: center;
+}
+
+.map figure {
+  width: 100%;
+  height: 0;
+  padding-bottom: 125%;
+  overflow: hidden;
+  position: relative;
+}
+
+.map iframe {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .contact-section {
@@ -560,6 +577,10 @@ aside .content-wrapper .form {
   margin-bottom: 20px;
 }
 
+.features .features-items {
+  align-items: flex-start;
+}
+
 .features article {
   display: flex;
   align-items: center;
@@ -569,6 +590,10 @@ aside .content-wrapper .form {
 
 .features .features-item-description {
   width: 62%;
+}
+
+.features i {
+  margin-bottom: 30px;
 }
 
 /* Reviews */
@@ -601,7 +626,6 @@ footer .footer-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-direction: row;
 }
 
 footer .contact {
@@ -618,7 +642,7 @@ footer p {
 }
 
 footer .social-icons {
-  width: 12.53em;
+  width: 12.5em;
   justify-content: space-between;
 }
 
@@ -640,37 +664,7 @@ footer .copyright {
 }
  
 .map figure {
-  width: 100%;
-  height: 0; 
-  padding-bottom: 125%; 
-  overflow: hidden;
-  position: relative;
-}
-
-.map iframe {
-  width: 100%;
-  height: 100%;
-  position: absolute; 
-  top: 0; 
-  left: 0; 
-}
-
-.embed-container { 
-  position: relative; 
-  padding-bottom: 56.25%; 
-  height: 0; 
-  overflow: hidden; 
-  max-width: 100%; 
-} 
-
-.embed-container iframe, 
-.embed-container object, 
-.embed-container embed { 
-  position: absolute; 
-  top: 0; 
-  left: 0; 
-  width: 100%; 
-  height: 100%; 
+padding-bottom: 45.5%;
 }
 
 .contact-section .content-wrapper h2 {
@@ -785,6 +779,10 @@ footer h4 {
 
 /********** ABOUT PAGE *************/
 
+.map figure {
+  padding-bottom: 37.5%;
+}
+
 .mission h2,
 .contact-section .content-wrapper h2 {
     width: 95%;
@@ -818,7 +816,7 @@ footer h4 {
   *,
   *::before,
   *::after {
-    background: #fff !important;
+    background: transparent !important;
     color: #000 !important;
     /* Black prints faster */
     box-shadow: none !important;
